@@ -1,0 +1,31 @@
+# Виртуальное окружение
+venv/
+.venv/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Рантайм-артефакты (БД, векторы, индекс)
+storage/
+storage_stress/
+storage_dedup/
+*.db
+*.db-journal
+*.db-wal
+*.npy
+faiss_index.bin
+documents_meta.json
+
+# Реальные сканы документов (приватные данные)
+test_data/raw_epts.jpeg
+test_data/raw_*.jpeg
+test_data/raw_*.jpg
+test_data/raw_*.png
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
